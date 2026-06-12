@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cavite City Disaster &amp; Emergency Response</title>
+<meta name="description" content="Lightweight emergency hotlines, evacuation centers, and disaster preparedness info for Cavite City residents.">
+<style>
+  :root{
+    --navy:#0b3d59;
+    --teal:#0e7c7b;
+    --alert:#d64541;
+    --sand:#f6f3ec;
+    --ink:#1c2b2d;
+    --line:#dcd6c8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    background:var(--sand);
+    color:var(--ink);
+    line-height:1.5;
+  }
+  header{
+    background:var(--navy);
+    color:#fff;
+    padding:1.5rem 1rem;
+    text-align:center;
+  }
+  header h1{font-size:1.5rem;letter-spacing:.5px;}
+  header p{margin-top:.25rem;font-size:.9rem;opacity:.85;}
+  .alert-bar{
+    background:var(--alert);
+    color:#fff;
+    text-align:center;
+    padding:.6rem 1rem;
+    font-weight:600;
+    font-size:.95rem;
+  }
+  nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:.5rem;
+    background:#fff;
+    border-bottom:1px solid var(--line);
+    padding:.6rem;
+    position:sticky;
+    top:0;
+    z-index:10;
+  }
+  nav a{
+    color:var(--navy);
+    text-decoration:none;
+    font-size:.85rem;
+    font-weight:600;
+    padding:.4rem .7rem;
+    border-radius:999px;
+    border:1px solid var(--line);
+  }
+  nav a:hover{background:var(--sand);}
+  main{max-width:760px;margin:0 auto;padding:1rem;}
+  section{margin:1.5rem 0;}
+  section h2{
+    color:var(--navy);
+    font-size:1.1rem;
+    border-left:4px solid var(--teal);
+    padding-left:.5rem;
+    margin-bottom:.6rem;
+  }
+  .card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:.8rem 1rem;
+    margin-bottom:.6rem;
+  }
+  .hotline-grid{display:grid;gap:.5rem;grid-template-columns:1fr;}
+  @media(min-width:600px){.hotline-grid{grid-template-columns:1fr 1fr;}}
+  .hotline-grid .card a{
+    display:block;
+    font-size:1.1rem;
+    font-weight:700;
+    color:var(--alert);
+    text-decoration:none;
+    margin-top:.2rem;
+  }
+  .hotline-grid .card span{font-size:.85rem;color:#555;}
+  table{width:100%;border-collapse:collapse;font-size:.9rem;}
+  table th, table td{
+    border:1px solid var(--line);
+    padding:.5rem;
+    text-align:left;
+  }
+  table th{background:var(--navy);color:#fff;}
+  table tr:nth-child(even){background:#fff;}
+  details{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:.6rem 1rem;
+    margin-bottom:.5rem;
+  }
+  details summary{font-weight:700;cursor:pointer;color:var(--navy);}
+  details p, details ul{margin-top:.5rem;}
+  details ul{padding-left:1.2rem;}
+  footer{
+    text-align:center;
+    font-size:.8rem;
+    color:#666;
+    padding:1.5rem 1rem;
+    border-top:1px solid var(--line);
+    margin-top:1rem;
+  }
+  footer a{color:var(--teal);}
+  .btn-sms{
+    display:inline-block;
+    background:var(--teal);
+    color:#fff;
+    text-decoration:none;
+    padding:.5rem 1rem;
+    border-radius:6px;
+    font-weight:600;
+    font-size:.9rem;
+    margin-top:.3rem;
+  }
+  .source-note{font-size:.75rem;color:#888;margin-top:.3rem;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🚨 Cavite City Disaster &amp; Emergency Response</h1>
+  <p>Quick access to hotlines, evacuation centers, and preparedness tips for Cavite City residents</p>
+</header>
+
+<div class="alert-bar">
+  In a life-threatening emergency, call <strong>911</strong> immediately.
+</div>
+
+<nav>
+  <a href="#hotlines">Hotlines</a>
+  <a href="#evacuation">Evacuation Centers</a>
+  <a href="#hazards">Hazards</a>
+  <a href="#prepare">Preparedness</a>
+  <a href="#report">Report</a>
+  <a href="#about">About</a>
+</nav>
+
+<main>
+
+  <section id="hotlines">
+    <h2>Emergency Hotlines</h2>
+    <div class="hotline-grid">
+      <div class="card">
+        <span>National Emergency Hotline</span>
+        <a href="tel:911">911</a>
+      </div>
+      <div class="card">
+        <span>Cavite City MDRRMO</span>
+        <a href="tel:+6346XXXXXXX">(046) XXX-XXXX</a>
+      </div>
+      <div class="card">
+        <span>PNP Cavite City</span>
+        <a href="tel:+6346XXXXXXX">(046) XXX-XXXX</a>
+      </div>
+      <div class="card">
+        <span>Bureau of Fire Protection</span>
+        <a href="tel:+6346XXXXXXX">(046) XXX-XXXX</a>
+      </div>
+      <div class="card">
+        <span>City Health Office</span>
+        <a href="tel:+6346XXXXXXX">(046) XXX-XXXX</a>
+      </div>
+      <div class="card">
+        <span>Red Cross Cavite Chapter</span>
+        <a href="tel:143">143</a>
+      </div>
+    </div>
+    <p class="source-note">⚠️ Sample placeholder numbers — replace with verified Cavite City MDRRMO contacts before publishing. Source: official LGU Facebook page / city hall directory.</p>
+  </section>
+
+  <section id="evacuation">
+    <h2>Evacuation Centers</h2>
+    <table>
+      <tr><th>Barangay</th><th>Center</th><th>Notes</th></tr>
+      <tr><td>San Roque</td><td>San Roque Elementary School</td><td>Flood &amp; typhoon</td></tr>
+      <tr><td>Caridad</td><td>Caridad National HS Gym</td><td>Flood &amp; typhoon</td></tr>
+      <tr><td>Dalahican</td><td>Dalahican Covered Court</td><td>Storm surge zone</td></tr>
+      <tr><td>San Antonio</td><td>San Antonio Barangay Hall</td><td>Fire incidents</td></tr>
+    </table>
+    <p class="source-note">⚠️ Sample data — update with current MDRRMO-designated evacuation centers per barangay.</p>
+  </section>
+
+  <section id="hazards">
+    <h2>Common Hazards in Cavite City</h2>
+    <details>
+      <summary>🌊 Flooding &amp; Storm Surge</summary>
+      <p>Coastal and low-lying barangays are prone to flooding during heavy rains and storm surges, especially during typhoon season (June–November). Monitor PAGASA advisories and move to higher ground early.</p>
+    </details>
+    <details>
+      <summary>🌀 Typhoons</summary>
+      <p>Cavite City is in the typhoon belt. Secure loose objects, charge devices in advance, and stock up on food, water, and medicine before a storm signal is raised in your area.</p>
+    </details>
+    <details>
+      <summary>🔥 Fire</summary>
+      <p>Densely populated areas are at risk of fire spread. Know your nearest fire exit and keep a fire extinguisher or sand/water ready at home.</p>
+    </details>
+    <details>
+      <summary>🌍 Earthquake</summary>
+      <p>Cavite is near active fault lines. Practice "Duck, Cover, and Hold" and identify safe spots in your home away from heavy furniture and windows.</p>
+    </details>
+  </section>
+
+  <section id="prepare">
+    <h2>Preparedness Checklist</h2>
+    <details>
+      <summary>🎒 Go Bag Essentials</summary>
+      <ul>
+        <li>Drinking water (1 gal/person/day) and ready-to-eat food</li>
+        <li>Flashlight, power bank, whistle</li>
+        <li>First aid kit and essential medicines</li>
+        <li>Important documents (IDs, certificates) in a waterproof bag</li>
+        <li>Cash, extra clothes, hygiene kit</li>
+        <li>Battery-powered or hand-crank radio</li>
+      </ul>
+    </details>
+    <details>
+      <summary>🏠 Before a Storm</summary>
+      <ul>
+        <li>Charge phones and power banks fully</li>
+        <li>Store extra water in clean containers</li>
+        <li>Secure roofs, windows, and loose outdoor items</li>
+        <li>Know your barangay's evacuation route and center</li>
+      </ul>
+    </details>
+    <details>
+      <summary>📞 Family Emergency Plan</summary>
+      <ul>
+        <li>Agree on a meeting point if separated</li>
+        <li>Save all hotline numbers in every family member's phone</li>
+        <li>Designate an out-of-town contact for relay messages</li>
+      </ul>
+    </details>
+  </section>
+
+  <section id="report">
+    <h2>Report an Emergency</h2>
+    <div class="card">
+      <p>Send your barangay name, exact location, and a short description of the emergency.</p>
+      <a class="btn-sms" href="sms:911">📱 Text 911</a>
+      <a class="btn-sms" href="tel:911">📞 Call 911</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About This Site</h2>
+    <div class="card">
+      <p>This is a free, open-source, single-file website built to help Cavite City residents quickly find emergency contacts, evacuation centers, and disaster preparedness information — even on slow connections.</p>
+      <p style="margin-top:.5rem;">It's intentionally lightweight (one HTML file, no frameworks, &lt;30KB) so it can be hosted for free, downloaded for offline use, or shared via USB/Bluetooth during connectivity outages.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Open source &mdash; community resource, not an official LGU channel. Always verify with Cavite City MDRRMO/PIO for official updates.</p>
+  <p>Built for Cavite City &middot; Edit and redistribute freely (MIT License)</p>
+</footer>
+
+<!-- LIVE CHAT WIDGET (Tawk.to - free, real-time chat with real agents) -->
+<!-- 1. Sign up free at https://www.tawk.to
+     2. Get your Property ID + Widget ID from Admin > Channels > Chat Widget
+     3. Replace YOUR_PROPERTY_ID and YOUR_WIDGET_ID below -->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/YOUR_PROPERTY_ID/YOUR_WIDGET_ID';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+
+</body>
+</html>
